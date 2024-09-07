@@ -1,0 +1,148 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.top-rectangle {
+    width: 280px;
+    height: 110px;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    margin-bottom: 10px;
+    border: 1px solid #97848450
+}
+
+.bottom-rectangle {
+    width: 280px;
+    height: 60px;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border: 1px solid #97848450
+}
+
+.side-oval {
+    width: 63px;
+    height: 184px;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border: 1px solid #97848450
+}
+
+.profile {
+    border-radius: 28%;
+    height: 85px;
+    width: 85px;
+    margin-top: 12.5px;
+    margin-left: 12.5px;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    float: right;
+    color: white;
+    margin-right: 20px;
+    margin-top: 30px;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 1px #fff,
+        0 0 5px #fff,
+        0 0 20px rgb(197, 197, 197),
+        0 0 30px rgb(112, 114, 112),
+        0 0 40px rgb(109, 109, 109),
+        0 0 55px rgb(56, 56, 56),
+        0 0 70px rgb(106, 107, 106);
+  }
+
+  #background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: blur(6px);
+    transform: scale(1.1);
+ }
+  
+ .typewriter {
+    color: white;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+    margin-left: 30px;
+    margin-top: 15px;
+    text-shadow: 
+        0 0 3px rgba(255, 255, 255, 0.6), 
+        0 0 6px rgba(255, 255, 255, 0.4), 
+        0 0 9px rgba(255, 255, 255, 0.2);
+}
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+}
+  
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #333;
+    }   
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 7px;
+}
+
+.social a {
+    display: inline-block;
+    transition: transform 0.3s, filter 0.3s, fill 0.3s;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
+}
+
+.social a:hover {
+    transform: scale(1.1);
+    fill: #ffffff;
+    filter: drop-shadow(0 0 15px rgb(80, 80, 80));
+}
+
+
+
